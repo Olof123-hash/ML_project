@@ -1,0 +1,4 @@
+[submodule "ML_project/extern/pybind11"]
+	path = ML_project/extern/pybind11
+	url = https://github.com/pybind/pybind11
+	branch = stable
