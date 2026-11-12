@@ -17,7 +17,6 @@ for (int i = 0; i < r1; i++) {
            result[i][j] += a[i][k] * b[k][j];
         }
     }
-
 }
 
 System.out.println(Arrays.deepToString(result));
@@ -25,6 +24,15 @@ System.out.println(Arrays.deepToString(result));
 
 return result;
 
+}
+
+public int[][] matrixTranspose(int[][] a) {
+
+int[][] result = new int[a[0].length][a.length];
+
+
+
+return result;
 }
     
 public static void main(String[] args) {
