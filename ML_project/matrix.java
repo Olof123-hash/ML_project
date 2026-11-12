@@ -13,13 +13,14 @@ int[][] result = new int[r1][c2];
 
 for (int i = 0; i < r1; i++) {
     for (int j = 0; j < c2; j++) {
-        result[i][j] = 0;
+        for (int k = 0; k < c1; k++) {
+           result[i][j] += a[i][k] * b[k][j];
+        }
     }
 
-    System.out.println(Arrays.deepToString(result));
-    return result;
 }
 
+System.out.println(Arrays.deepToString(result));
 //loop through 
 
 return result;
@@ -27,15 +28,15 @@ return result;
 }
     
 public static void main(String[] args) {
-int[][] a = {{3,4}, {3,7}};
+int[][] a = {{3,4,5}, {5,7,5}};
 
-int[][] b = {{4,5}, {6,7}};
+int[][] b = {{4,5}, {6,7}, {6,8}};
 
 int r1 = a.length;
 int c1 = a[0].length;
 
 int r2 = b.length;
-int c2 = a[0].length;
+int c2 = b[0].length;
 
 
 System.out.println(Arrays.deepToString(a));
